@@ -3,6 +3,8 @@
 //1.你首先应该是知道如何防暂离，例如使用精华分解合成方法（通过鼠标宏或者其他软件）。
 //2.在原来的循环流程上加入截图按键。
 //3.重要！你需要把你的魔兽世界改成窗口显示，且分辨率设置成【800x600】，必须如此设置！！！！！
+//4.配置好下面的内容之后，请保存退出，win用户可以双击start.bat来运行脚本。mac用户要使用终端，进入脚本目录输入"node index.js"来运行脚本。
+//5.脚本发现掉线之后，会报警并停止运行，你需要重新运行本脚本。
 //原理：
 //本脚本的原理是自动扫描你魔兽世界截图文件夹最新的截图，如果发现截图里面有魔兽世界的LOGO，就证明掉线了，然后触发警报。
 //报警就是打开一个网页开始播放音乐。或者给你手机发短信（需要你有阿里云服务，不适合一般用户）
@@ -117,9 +119,9 @@ function sendMsg(text){
 	text = "你号掉了！";
 	let smsClient = new SMSClient({accessKeyId, secretAccessKey})
 		smsClient.sendSMS({
-		    PhoneNumbers: '18612534799',
-		    SignName: 'GR科技',
-		    TemplateCode: 'SMS_137410159',
+		    PhoneNumbers: '18*********',
+		    SignName: '*****',
+		    TemplateCode: 'SMS_******',
 		    TemplateParam: '{"status":"'+text+'"}'
 		}).then(function (res) {
 		    let {Code}=res
