@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@alicloud/sms-sdk": "^1.1.6",
-    "jimp": "^0.9.5",
+    "jimp": "^0.22.7",
     "matches-subimage": "^1.0.0",
     "pixelmatch": "^5.1.0",
     "play-sound": "^1.1.3"
